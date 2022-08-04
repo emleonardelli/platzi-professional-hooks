@@ -10,9 +10,9 @@ services:
     environment:
       ENVIRONMENT: local
     ports:
-      - 8080:8080
-    image: custom-docker-node
-    container_name: custom-docker-node
+      - 3000:3000
+    image: react-professional-hooks
+    container_name: react-professional-hooks
     restart: unless-stopped
     tty: true
     working_dir: /app
