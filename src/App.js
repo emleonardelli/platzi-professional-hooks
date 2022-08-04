@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import { Characters } from './components/Characters';
+import Header from './components/Header';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{
+      margin: '0px',
+      padding: '0px',
+      backgroundColor: darkMode ? '#444444' : '#ffffff'
+      }}
+    >
+      <Header setDarkMode={setDarkMode} darkMode={darkMode}/>
+      <Characters />
+      <h1>Hola mundo</h1>
     </div>
   );
 }
