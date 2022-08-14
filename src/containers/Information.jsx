@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../styles/components/Information.css';
 function Information() {
   return (
     <div className="Information">
@@ -62,6 +62,15 @@ function Information() {
           </div>
           <div className="Information-next">
             Pagar
+          </div>
+        </div>
+      </div>
+      <div className="Information-sidebar">
+        <h3>Pedido:</h3>
+        <div className="Information-item">
+          <div className="Information-element">
+            <h4>ITEM Name</h4>
+            <span>$10 </span>
           </div>
         </div>
       </div>
